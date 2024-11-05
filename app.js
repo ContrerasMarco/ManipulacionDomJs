@@ -18,6 +18,9 @@ boton.addEventListener("click", () =>
 }
 )
 
+menuevent.style.color ="yellow"
+menuevent.style.backgroundColor ="grey"
+menuevent.style.fontSize = "20px"
 
 
 
