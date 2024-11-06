@@ -27,3 +27,6 @@ agregarElemento.before(addListItem2)
 const addListItem3 =document.createElement("li")
 addListItem3.textContent="Item 8"
 agregarElemento.after(addListItem3)
+
+ const itemRemove = document.querySelector("li")
+ itemRemove.remove()
