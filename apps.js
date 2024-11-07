@@ -1,6 +1,6 @@
 const contentArea = document.getElementById("contentArea")
 
-contentArea.innerHTML ="<p> cambiando el parrafo con innerHtml. soy el emento padre</>"
+contentArea.innerHTML ="<p> cambiando el parrafo con innerHtml. soy el elemento padre</>"
 
 // contentArea.insertAdjacentHTML("beforebegin", "<p>Aagregando un parrafo con insertadjacenthtml</p>")
 // contentArea.insertAdjacentHTML("beforeend", "<p>agregando elemento al final del ultimo hijo</p>")
@@ -30,3 +30,13 @@ agregarElemento.after(addListItem3)
 
  const itemRemove = document.querySelector("li")
  itemRemove.remove()
+
+//  const clonedp = document.querySelector("#contentArea")
+const originalP = document.querySelector("p")
+const Pcloned =originalP.cloneNode(true)
+contentArea.append(Pcloned)
+Pcloned.textContent = "Soy un elemento clonado y em cambiaron el nombre xD"
+
+const list = document.querySelector("#listArea")
+const itemReplace = list.children[2];
+itemReplace.replaceWith(Pcloned)
