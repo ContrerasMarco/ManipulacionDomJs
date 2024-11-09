@@ -20,9 +20,17 @@ container.addEventListener("mouseover", () =>
 // }
 // );     
 
-const btnClickCallback = () => {    
-    alert("Button clicked");    
-    botones.removeEventListener('click',btnClickCallback); 
-}
+// const btnClickCallback = () => {    
+//     alert("Button clicked");    
+//     botones.removeEventListener('click',btnClickCallback); 
+// }
 
-botones.addEventListener('click', btnClickCallback);
+// botones.addEventListener('click', btnClickCallback);
+
+// const botonClick = document.getElementById("btn")
+
+const funcionBotonClick = (event) =>  {
+    alert("Hola a todos")
+    console.log(event)
+}
+botones.addEventListener("click", funcionBotonClick)
