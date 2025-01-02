@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="taskManagerCss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <title>Task Manager</title>
+</head>
+<body>
+    <section id="button-Theme">
+        <button id="button-Theme-btn">Cambiar apariencia</button>
+    </section>
+    <section id="task-manager">
+        <h1>To do List</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Nueva Tarea" required>
+            <button type="submit" id="task-button" >Agregar tarea</button>
+        </form>
+      
+      </section>
+      <section id="list-task" >
+        
+        <ul id="ul_list">
+           <div id="task-list">
+            <li>Task default </li> 
+             <span class="delete-tarea">❌</span>    
+             <span class="editar-tarea">✏️</span> 
+            </div> 
+        </ul>  
+        
+     
+        
+      </section>
+<script src="taskManager.js"></script>
+</body>
+</html>
